@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+}
+body {
+    body {
+        margin:0 auto;
+     }
+}
+.content{
+    width: 1250px;
+}
+li, a, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #212121;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15%;
+    margin-bottom: 0%;
+}
+.logo{
+    cursor: pointer;
+}
+.nav__link{
+    list-style: none;
+}
+.nav__link li {
+    display: inline-block;
+    padding: 0px 20px ;
+    border: #212121;
+}
+.nav__link li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__link li a:hover {
+    color: #efefef;
+}
+
+.dropbtn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #212121;
+    text-decoration: none;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover{
+    transition: all 0.3s ease 0s;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    color: #efefef;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+button {
+    padding: 9px 25px;
+    background-color: #ee68cc;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+}
+button:hover{
+    background-color: #ee68cc;
+}
+/*PAGE 1*/
+.page1 img {
+    float: right;
+}
+.page1 {
+    margin: 60 auto;
+}
+.page1 h1, p{
+    margin-left: 18%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #212121;
+    text-decoration: none;
+}
+.page1 h1{
+    font-size: 100px;
+}
+.cta button {
+    margin-left: 18%;
+    background-color: #ee68cc;
+    border-radius: 10px;
+    border-width: 0px;
+}
+.dc button {
+    background-color: #ffffff;
+    color: #ee68cc;
+    border-radius: 10px;
+    border-width: 0px;
+}
+.maker img{
+    margin-top: 13%;
+    width: 21px;
+}
+.content img {
+    float: right;
+    margin-right: 20%;
+}

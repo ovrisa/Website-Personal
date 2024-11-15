@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akademik dan Belajar Efektif</title>
+  <style>
+    li{
+      margin: 10px auto;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ee68cc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .LOGO{display: grid;
+    align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .ebook-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .ebook-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .ebook-card h3 {
+      color: #ee68cc;
+    }
+
+    .ebook-card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #ee68cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #ee68cc;
+    }
+  </style>
+</head>
+<body>
+
+<header class="LOGO">
+  <img src="LOGO SMKN 7 SMG.png" alt="" width="150">
+  <h1>Akademik dan Belajar Efektif</h1>
+</header>
+
+<nav>
+  <a onclick="tampilkan('beranda')">Beranda</a>
+  <a onclick="tampilkan('materi')">Materi</a>
+  <a onclick="tampilkan('tentang')">Tentang</a>
+  <a onclick="tampilkan('kontak')">Kontak</a>
+</nav>
+
+<div class="content" id="beranda">
+  <h2>Beranda</h2>
+  <p>Selamat datang di eBook Interaktif! Jelajahi materi dan temukan konten menarik.</p>
+  <p>Kami memahami bahwa proses belajar terkadang bisa terasa berat, terutama ketika dihadapkan dengan tantangan seperti rasa malas, kurang motivasi, dan tuntutan ujian. Untuk itu, kami hadir dengan eBook ini sebagai panduan komprehensif yang diharapkan dapat membantu anak-anak dan remaja dalam menjalani perjalanan belajar dengan lebih mudah dan menyenangkan.</p>
+  <p>Melalui materi yang praktis dan terstruktur, eBook ini berfokus pada berbagai aspek penting untuk mendukung kesuksesan akademik dan pengembangan pribadi. Berikut adalah beberapa topik utama yang kami tawarkan:</p>
+
+  <ul>
+      <li><b>Tips Belajar Efektif dan Mengatasi Rasa Malas</b> : <p>Berbagai strategi kreatif untuk membangun kebiasaan belajar yang produktif dan tetap konsisten, bahkan di saat motivasi sedang menurun.</p></li>
+      <li><b>Cara Mempersiapkan Ujian Nasional dan Ujian Masuk PTN</b> : <p>Panduan terperinci tentang cara belajar dan mempersiapkan diri dengan lebih terarah, sehingga Anda lebih siap dan percaya diri menghadapi ujian besar.</p></li>
+      <li><b>Metode Mind Mapping</b> : <p>Teknik mencatat yang inovatif untuk mengubah informasi kompleks menjadi lebih mudah dipahami dan menarik, membantu Anda belajar dengan cara yang lebih menyenangkan.</p></li>
+      <li><b>Manajemen Waktu bagi Pelajar</b> : <p>Panduan untuk mengatur waktu dengan baik, sehingga Anda dapat menyeimbangkan antara belajar, kegiatan ekstrakurikuler, dan hobi, tanpa merasa kewalahan.</p></li>
+  </ul>
+
+  <p>Kami berharap eBook ini dapat menjadi teman belajar yang efektif dan inspiratif bagi para pelajar. Dengan strategi dan metode yang tepat, kami percaya setiap siswa mampu meraih potensi terbaiknya dan menikmati proses belajar tanpa merasa terbebani.</p>
+
+  <p>Mari bersama-sama mewujudkan cara belajar yang lebih efektif dan penuh semangat!</p>
+</div>
+
+<div class="content hidden" id="materi">
+  <h2>Materi</h2>
+  <div class="ebook-container">
+    <div class="ebook-card">
+      <h3>BAB 1</h>
+      <p>Tips Belajar Efektif dan Mengatasi Rasa Malas</p>
+      <button onclick="bukaBab('bab1')">Buka</button>
+    </div>
+
+    <div class="ebook-card">
+      <h3>Bab 2</h>
+      <p>Cara Mempersiapkan Ujian Nasional dan Ujian Masuk PTN</p>
+      <button onclick="bukaBab('bab2')">Buka</button>
+    </div>
+
+    <div class="ebook-card">
+      <h3>Bab 3</h>
+      <p>Metode Mind Mapping: Membuat Catatan Menjadi Lebih Mudah Dipahami</p>
+      <button onclick="bukaBab('bab3')">Buka</button>
+    </div>
+
+    <div class="ebook-card">
+      <h3>Bab 4</h>
+      <p>Manajemen Waktu bagi Pelajar: Menyeimbangkan Belajar dan Hobi</p>
+      <button onclick="bukaBab('bab4')">Buka</button>
+    </div>
+  </div>
+</div>
+
+<div class="content hidden" id="bab1">
+  <h2>Bab 1: Tips Belajar Efektif dan Mengatasi Rasa Malas</h2>
+  <img class="img" src="malas belajar.jpg" style="width: 500px;" alt="malas belaja.jpg">
+  <p><b>A. Mengapa Belajar Efektif Itu Penting?</b></p>
+  <ul>
+    <li><b>Efisiensi waktu        : </b><p>Dengan teknik yang baik meminimalkan waktu tanpa hasil dan mengurangi rasa terburu-buru.</p></li>
+    <li><b>Pemahaman lebih dalam  : </b><p>Teknik belajar efektif membantu menyimpan informasi dalam ingatan jangka panjang, bukan sekadar hafalan.</p></li>
+    <li><b>Mengurangi stres       : </b><p>Saat tugas dan ujian sudah dipersiapkan dengan baik, kamu bisa lebih tenang dan percaya diri.</p></li>
+  </ul>
+  
+  <b>B. Langkah-langkah Belajar Efektif</b>
+  <ul>
+    <b>1. Buat Jadwal Belajar</b>
+    <li>Buat jadwal yang realistis, misalnya 1-2 jam setiap hari dengan istirahat di sela-sela.</li>
+    <li>Gunakan <b>Teknik Pomodoro</b>: belajar 25 menit, lalu istirahat 5 menit. Ulangi hingga 4 sesi, lalu beri istirahat lebih lama (20–30 menit).</li>
+    <b>2. Cari Tempat Belajar yang Nyaman</b>
+    <li>Pastikan meja belajar rapi dan bebas dari gangguan seperti TV atau notifikasi ponsel.</li>
+    <li>Siapkan alat belajar seperti buku, laptop, atau kalkulator sebelum mulai, agar tidak terganggu di tengah sesi.</li>
+    <b>3. Pahami Bukan Sekadar Menghafal</b>
+    <li>Gunakan <b>metode SQ3R</b>(Survey, Question, Read, Recite, Review) untuk membaca buku secara efektif.</li>
+    <li>Contoh : Jika belajar tentang sistem pernapasan, tanyakan, "Mengapa paru-paru punya dua lobus besar dan kecil?" Ini memancing pemahaman lebih dalam.</li>
+    <b>4. Gunakan Berbagai Media</b>
+    <li>Tonton <b>video tutorial</b> atau materi tambahan di platform seperti YouTube atau Khan Academy.</li>
+    <li>Gunakan aplikasi seperti <b>Quizlet</b> atau <b>Anki</b> untuk membuat flashcards dan melatih hafalan secara berkala.</li>
+    <b>5. Diskusi Kelompok</b>
+    <li>Belajar dengan teman memungkinkan kamu melihat sudut pandang baru dan memperkuat pemahaman.</li>
+    <li>Coba ajarkan materi yang sudah dipelajari kepada teman. Ini akan membuat informasi lebih lekat dalam ingatan.</li>
+  </ul>
+
+  <b>C. Cara Mengatasi Rasa Malas</b>
+  <ul>
+    <b>1. Mulai dengan Langkah Kecil</b>
+    <li>Daripada fokus pada target besar, pecah tugas menjadi bagian kecil. Contoh: Baca 2 halaman, bukan langsung 1 bab.</li>
+    <b>2. Motivasi Diri Sendiri</b>
+    <li>Buat visualisasi impianmu, seperti kuliah di jurusan impian, dan jadikan itu pemacu semangat. Tempel kutipan motivasi di meja belajarmu.</li>
+    <b>3. Batasi Penggunaan Gadget</b>
+    <li>Aktifkan <b>mode fokus</b> di ponsel atau gunakan aplikasi pemblokir media sosial seperti Forest.</li>
+    <li>Tentukan waktu khusus untuk bermain gadget setelah selesai belajar.</li>
+    <b>4. Berikan Reward pada Diri Sendiri</b>
+    <li>Hadiah bisa berupa menonton film favorit atau bermain game setelah berhasil mencapai target belajar harian.</li>
+  </ul>
+  <button onclick="tampilkan('materi')">Kembali ke Materi</button>
+</div>
+
+<div class="content hidden" id="bab2">
+  <h2>Bab 2: Cara Mempersiapkan Ujian Nasional dan Ujian Masuk PTN</h2>
+  <img class="img" src="persiapan ujian.jpg" style="width: 500px;" alt="persiapan ujian.jpg">
+  <p><b>A. Mulai Persiapan Sejak Dini</b></p>
+  <ul>
+    <li>Pelajari <b>kisi-kisi</b> atau materi yang sering keluar dalam ujian sebelumnya.</li>
+    <li>Gunakan bantuan <b>bimbingan belajar</b> online atau offline untuk memperkuat pemahaman.</li>
+  </ul>
+  
+  <b>B. Buat Rencana Belajar</b>
+  <ul>
+    <li>Buat target mingguan, seperti "Selesaikan Bab 1 Matematika minggu ini.</li>
+    <li>Fokus pada mata pelajaran yang lemah terlebih dahulu. Evaluasi hasil latihan setiap minggu.</li>
+  </ul>
+
+  <b>C. Latihan Soal</b>
+ <ul>
+    <li>Kerjakan soal ujian tahun-tahun sebelumnya dan cek hasilnya untuk memahami pola soal.</li>
+    <li>Biasakan latihan soal dengan timer untuk membiasakan diri menghadapi batas waktu.</li>
+  </ul>
+
+  <b>D. Jaga Kesehatan Fisik dan Mental</b>
+  <ul>
+    <li>Tidur cukup minimal 7-8 jam setiap malam agar otak dapat bekerja maksimal.</li>
+    <li>Berolahraga ringan secara rutin agar tubuh tetap bugar dan otak lebih fokus.</li>
+  </ul>
+  <button onclick="tampilkan('materi')">Kembali ke Materi</button>
+</div>
+
+<div class="content hidden" id="bab3">
+  <h2>Bab 3: Metode Mind Mapping: Membuat Catatan Menjadi Lebih Mudah Dipahami</h2>
+  <img class="img" src="mind map.jpg" style="width: 500px;" alt="mind map.jpg">
+  <p><b>A. Apa Itu Mind Mapping?</b></p>
+  <ul>
+    <li>Mind mapping adalah metode mencatat berbentuk diagram dengan cabang-cabang yang menunjukkan hubungan antara konsep utama dan subkonsep.</li>
+  </ul>
+
+  <b>B. Cara Membuat Mind Mapping</b>
+  <ul>
+    <p>1. <b>Tulis tema utama</b> di tengah kertas, misalnya Sistem Pencernaan.</p>
+    <p>2. Buat <b>cabang-cabang utama</b> dari tema, seperti Organ Pencernaan dan Fungsi Pencernaan.
+    <p>3. Tambahkan <b>subcabang</b> untuk detail lebih kecil, misalnya:</p>
+      <li style="margin: 0 30px auto;">Organ Pencernaan: Lambung, Usus, Pankreas</p>
+      <li style="margin: 0 30px auto;">Fungsi Pencernaan: Pencernaan Mekanik, Pencernaan Kimiawi</li>
+    <p>4. Gunakan warna dan gambar agar diagram mudah dipahami.</p>
+  </ul>
+
+  <b>C. Manfaat Mind Mapping</b>
+  <ul>
+    <p>Membantu otak melihat hubungan antar-konsep dengan jelas.</p>
+    <p>Mempermudah belajar karena informasi diproses secara visual dan kreatif.</p>
+    <p>Sangat efektif untuk mempersiapkan ujian atau membuat presentasi.</p>
+  </ul>
+  <button onclick="tampilkan('materi')">Kembali ke Materi</button>
+</div>
+
+<div class="content hidden" id="bab4">
+  <h2>Bab 4: Manajemen Waktu bagi Pelajar: Menyeimbangkan Belajar dan Hobi</h2>
+  <img class="img" src="manajemen waktu.jpg" style="width: 500px;" alt="manajemen waktu.jpg">
+  <p><b>A. Pentingnya Manajemen Waktu</b></p>
+  <ul>
+    <li>Membantu siswa <b>menyelesaikan tugas tepat waktu</b> dan mengurangi penundaan.</li>
+    <li>Memungkinkan siswa <b>menikmati hobi dan bersosialisasi</b> tanpa merasa bersalah atau stres karena tugas yang menumpuk.</li>
+    <br>
+  </ul>
+
+  <b>B. Cara Mengatur Waktu dengan Efektif</b>
+  <br>
+  <br>
+
+  <ul>
+    <b>1. Buat To-Do List Harian</b>
+      <li style="margin: 10 30px auto;">Gunakan metode prioritas ABC :</li>
+      <li style="margin: 10 30px auto;">A : Tugas yang harus segera diselesaikan (misalnya PR Matematika untuk besok).</li>
+      <li style="margin: 10 30px auto;">B : Tugas yang penting tapi bisa ditunda (misalnya, membaca bab tambahan).</li>
+      <li style="margin: 10 30px auto;">C : Aktivitas opsional (seperti memperbarui jurnal harian).</li>
+      <br>
+  </ul>
+
+  <ul>
+    <b>2. Gunakan Kalender atau Planner</b>
+    <li style="margin: 10 30px auto;">Catat <b>jadwal ujian, tugas, dan kegiatan</b> di kalender agar tidak ada yang terlewat.</li>
+    <li style="margin: 10 30px auto;">Bisa menggunakan planner fisik atau <b>aplikasi seperti Google Calendar</b>.</li>
+    <br>
+  </ul>
+
+  <ul>
+    <b>3. Atur Waktu Istirahat dan Hobi</b>
+    <li style="margin: 10 30px auto;">Pastikan ada waktu untuk <b>aktivitas menyenangkan</b> setiap hari, seperti berolahraga atau bermain musik.</li>
+    <li style="margin: 10 30px auto;">Keseimbangan antara belajar dan hobi penting agar kamu tidak cepat lelah.</li>
+    <br>
+  </ul>
+
+  <ul>
+    <b>4. Evaluasi Waktu Secara Berkala</b>
+    <li style="margin: 10 30px auto;">Setiap minggu, tinjau kembali jadwalmu dan lihat apakah ada yang perlu diperbaiki.</li>
+    <li style="margin: 10 30px auto;">Misalnya, jika kamu sering terlambat belajar, mungkin jadwalmu terlalu padat atau kamu butuh lebih banyak istirahat.</li>
+    <br>
+    </ul>
+    <button onclick="tampilkan('materi')">Kembali ke Materi</button>
+</div>
+
+<div class="content hidden" id="tentang">
+  <h2>Tentang</h2>
+  <p>Ebook ini disusun sebagai panduan praktis bagi pembaca yang ingin memahami dasar-dasar pemrograman dengan Small Basic, khususnya melalui proyek konversi suhu. Penulis berharap ebook ini tidak hanya membantu pembaca dalam belajar pemrograman, tetapi juga memberi wawasan praktis dalam menciptakan aplikasi yang bermanfaat dalam kehidupan sehari-hari.</p>
+  <b>Tentang Penulis</b>
+  <h2><img class="img" src="ovrisa.jpg" style="width: 250px;" alt="ovrisa"></h2>
+  <p><b>Nama :</b> Theodora Ovrisa Ersalina</p>
+  <p><b>Pendidikan :</b> SMK NEGERI 7 SEMARANG, INDONESIA</p>
+  <p><b>Bidang Keahlian:</b> PENGEMBANGAN PERANGKAT LUNAK DAN GIM (PPLG)</p>
+  <p>Terima kasih telah membaca! Semoga ebook ini memberikan manfaat dan inspirasi dalam perjalanan Anda belajar pemrograman.</p>
+</div>
+
+<div class="content hidden" id="kontak">
+  <h2>Kontak</h2>
+  <a href="https://wa.me/qr/GTMR553NN4DEC1"><button>Contact</button></a>
+  <a href="https://www.instagram.com/theodoraovri/profilecard/?igsh=ZzlhdGk5MHBmaWRi"><button>Sosial Media</button></button></a>
+</div>
+
+<script>
+  function tampilkan(bagian) {
+    const sections = document.querySelectorAll('.content');
+    sections.forEach(section => section.classList.add('hidden'));
+
+    document.getElementById(bagian).classList.remove('hidden');
+  }
+
+  function bukaBab(bab) {
+    tampilkan(bab);
+  }
+
+  // Tampilkan "Beranda" saat halaman pertama kali dibuka
+  tampilkan('beranda');
+</script>
+<script src="homepage.js"></script>
+</body>
+</html>
